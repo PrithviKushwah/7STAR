@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body style="background-color: black;">
+  <div class="snow"></div>
     <header>
         <nav class="navbar">
           <a class="logo" href="#"><img src="./7STAR-removebg-preview.png"/></a>
@@ -22,32 +23,43 @@
           <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
         </nav>
       </header>
-  
-<h1 style="color: aliceblue;">7STAR PROJECTS</h1>
-<div class="wrapper">
-<div class="media">
-    <div class="layer">
-    <a href="https://earnest-elf-ffa0e6.netlify.app/">
-    <p>+ INDIAN CLIENT</p>
-</a>
-  </div>
-<img src="./project1.png" alt="" />
-</div>
- <div class="media">
-    
+  <div class="projects-div">
 
+    <h1  style="color: aliceblue;">7STAR PROJECTS</h1>
+    <div class="wrapper">
+    <div class="media">
         <div class="layer">
-            <p>+ M. O' Neil</p>
-          </div>
+        <a href="https://earnest-elf-ffa0e6.netlify.app/">
+        <p>+ INDIAN CLIENT</p>
+    </a>
+      </div>
+    <img src="./project1.png" alt="" />
+    </div>
+     <div class="media">
+        
     
-<img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
-</div>
-   <div class="media">
-<div class="layer">
-    <p>+ N. Mehta</p>
+            <div class="layer">
+                <p>+ M. O' Neil</p>
+              </div>
+        
+    <img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+    </div>
+       <div class="media">
+    <div class="layer">
+        <p>+ N. Mehta</p>
+      </div>
+    <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
+    </div>
+    </div>
   </div>
-<img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
-</div>
-</div>
 </body>
+<script>
+  const header = document.querySelector("header");
+  const hamburgerBtn = document.querySelector("#hamburger-btn");
+  const closeMenuBtn = document.querySelector("#close-menu-btn");
+  // Toggle mobile menu on hamburger button click
+  hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+  // Close mobile menu on close button click
+  closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+</script>
 </html>

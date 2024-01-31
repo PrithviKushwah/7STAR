@@ -170,9 +170,20 @@ html {
     justify-content: center;
 }
   
+
+.bg-div {
+  position: absolute;
+  z-index: -1;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 500px) {
-  .content{
-   margin-top: 60vh;
+  .hero-section .content {
+    margin-top: 5vh;
   }
 }
   

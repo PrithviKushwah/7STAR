@@ -239,8 +239,21 @@ header .navbar {
   }
 }
 
+
+.projects-div {
+  margin-top: 100px; /* Adjust as needed */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .projects-div {
+    margin-top: 20vh; /* Adjust as needed */
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  .projects-div{
-   margin-top: 60vh;
+  /* Further adjustments for smaller screens */
+  .projects-div {
+    margin-top: 10vh; /* Adjust as needed */
   }
 }

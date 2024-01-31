@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #e0e0e0;
-  overflow: hidden;
+  
   font-family: "Inter", sans-serif;
 }
 
@@ -132,7 +132,7 @@ header .navbar {
 }
 .hero-section {
   height: 100vh;
-  /* background-image: url("https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg"); */
+  background-image: url("https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -239,52 +239,8 @@ header .navbar {
   }
 }
 
-html {
-   height: 100%;
-   overflow: hidden;
-    background: linear-gradient(#123 30%, #667);
-    
-  }
-  .snow, .snow:before, .snow:after {
- 
-    overflow: hidden;
-    position: absolute;
-    top: -600px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image:  radial-gradient(5px 5px at 430px 484px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 500px 303px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 251px 191px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 403px 149px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 382px 335px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 422px 534px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 358px 385px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 328px 375px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 311px 55px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 140px 406px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 41px 263px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 518px 407px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 47px 64px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0));
-    background-size: 600px 600px;
-    animation: snow 3s linear infinite;
-    content: "";
-  }
-  .snow:after {
-    margin-left: -200px;
-    opacity: 0.4;
-    animation-duration: 6s;
-    animation-direction: reverse;
-    filter: blur(3px);
-  }
-  .snow:before {
-    animation-duration: 9s;
-    animation-direction: reverse;
-    margin-left: -300px;
-    opacity: 0.65;
-    filter: blur(1.5px);
-  }
-  @keyframes snow {
-    to {
-      transform: translateY(600px);
-    }
-  }
-  
-/*  */
-.projects-div{
-  margin-top: 0%;
-}
-@media screen and (max-width: 767px) {
-  /* Adjust the max-width as per your needs for targeting mobile devices */
-  .projects-div {
-      margin-top: 50%;
+@media only screen and (max-width: 600px) {
+  .projects-div{
+   margin-top: 60vh;
   }
 }
